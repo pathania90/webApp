@@ -1,97 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  
-<!--FONT AWESOME-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!--GOOGLE FONTS-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Document</title>
 </head>
-<body>
- 
-     
-          <section>
-         <h1>pixelo</h1>
-         <form action="">
-          <input type="text" id="search-input" placeholder="search for images">
-          <button id="search-button">Search</button>
-         </form>
-        </section>
-        <div class="search-results">
-          <div class="search-result">
-            <img src="https://plus.unsplash.com/premium_photo-1675368244123-082a84cf3072?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww" alt="">
-            <a href="https://unsplash.com/s/photos/nature" target="_blank"> nature</a>
-         </div>
-         <div class="search-result">
-          <img src="https://plus.unsplash.com/premium_photo-1675368244123-082a84cf3072?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww" alt="">
-          <a href="https://unsplash.com/s/photos/nature" target="_blank"> nature</a>
+<body class="">
+      <!-- navbar -->
+       <nav class=" h-20 fixed min-w-full 
+       w-auto z-2 lg:px-32 flex items-center  
+       p-6 justify-between bg-[#11001F] ">
+       <img       class="w-28 "    src="./asset/asset 2.png" alt="">
+        
+       <!-- navlists -->
+        <ul class="   hidden  md:hidden lg:flex   border-2 p-4 px-14
+         rounded-full text-sm capitalize gap-8 md:px-6 md:gap-6 text-white">
+          <li><a href="" class="text-white">home</a></li>
+          <li><a href="#about">about us</a></li>
+          <li><a href="">services</a></li>
+          <li><a href="">my work</a></li>
+           <li><a href="">contact me</a></li>
+        </ul>
+    
+       <div class="flex gap-5 text-xl items-center text-white">
+
+       <i  onclick="onClick()"  id="btn" class="fa-solid fa-toggle-on"></i>
+       <button class="hidden lg:flex border-gray-400 border-2
+        py-3.5 px-8 rounded-full text-center capitalize "><a href="" class="text-white text-sm text-center">contact me</a></button>
+       <div class="lg:hidden">
+       <i class="fa-solid fa-bars lg:hidden"></i>
        </div>
-       <div class="search-result">
-        <img src="https://plus.unsplash.com/premium_photo-1675368244123-082a84cf3072?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww" alt="">
-        <a href="https://unsplash.com/s/photos/nature" target="_blank"> nature</a>
-     </div>
-     <div class="search-result">
-      <img src="https://plus.unsplash.com/premium_photo-1675368244123-082a84cf3072?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww" alt="">
-      <a href="https://unsplash.com/s/photos/nature" target="_blank"> nature</a>
-   </div>
-   <div class="search-result">
-    <img src="https://plus.unsplash.com/premium_photo-1675368244123-082a84cf3072?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww" alt="">
-    <a href="https://unsplash.com/s/photos/nature" target="_blank"> nature</a>
- </div>
-          <div class="search-result">
-            <img src="https://plus.unsplash.com/premium_photo-1675368244123-082a84cf3072?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww" alt="">
-            <a href="https://unsplash.com/s/photos/nature" target="_blank"> nature</a>
-         </div>
-         <div class="search-result">
-          <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fHww" alt="">
-          <a href="https://unsplash.com/s/photos/nature" target="_blank">yiy</a>
        </div>
-       <div class="search-result">
-        <img src="https://plus.unsplash.com/premium_photo-1675368244123-082a84cf3072?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww" alt="">
-        <a href="https://unsplash.com/s/photos/nature" target="_blank"> nature</a>
-     </div>
+       </nav>
+     <div class="main ">
+       <!-- first page -->
+        <div    id="home" class="  lg:pt-32 pt-24 overflow-hidden  h-screen
+        flex flex-col text-center items-center gap-5 text-white bg-[#11001F] p-6">
+              <div class=" lg:mt-8
+               bg-red-400 h-[150px] w-[150px]  rounded-full">
+                <img src="./asset/asset 11.png" alt="">
+       </div>
+       <h1 class="  text-2xl font-semibold">HI I'm Akshit Mankotia</h1>
+        <h1 class=" lg:text-6xl lg:w-[50%]  lg:leading-snug
+           text-4xl capitalize leading-snug">video & graphic editor  based in india</h1>        
+        <p class="text-lg leading-snug lg:w-[35vw] text-center flex">I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple</p>
+             
+        <!-- buttons -->
+         <div class="flex mb-16 lg:gap-5 gap-2 lg:flex-row ">
+            <button style="background:linear-gradient(#BE31C1,#D67334);" class="
+                py-3 px-6 rounded-full
+            text-lg capitalize     ">contact me</button>
+            <button  class="
+                py-3 px-6 text-black
+            text-lg capitalize   rounded-full bg-white border-2
+             border-black ">resume</button> 
+        </div>
+    
+    </div>
+    <!-- second page  -->
+      <div id="about" class="  pt-20 bg-[#11001F] 
+       flex flex-col items-center justify-center   lg:px-10">
+        <div class="  capitalize flex flex-col gap-2 text-lg items-center ">
+          
+            <h1 class="text-2xl text-white">about me</h1>
+        </div>
+            <div class="   lg:flex-row lg:justify-center lg:px-20
+             m-6 flex flex-col  items-center border-2 border-black">
+
+               <!-- img -->
+                <div class="flex mt-20   lg:mb-5">
+                    <img  class=" lg:w-80  w-60 object-cover" src="./asset/asset 15.png" alt="">
+                </div>
+
+                <div id="part2" class=" lg:w-[60%] w-full p-3 lg:p-10 gap-10 bg-[#11001F]
+                 flex flex-col items-center m-6">
+                      <p class="text-sm leading-8 text-white">I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+                 <!-- cards -->
+                  <div id="cards" class=" lg:flex-row w-full  gap-5  flex flex-col">
+                       
+             <div class="border-2  h-44 lg:w-[33%]
+             gap-2 bg-[#11001F]
+               border-white
+                 flex flex-col text-white
+                  rounded-2xl p-5">
+                  <img   class="w-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAuCAYAAABu3ppsAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKZSURBVHgBzZmBcdswDEXhTpARNEK7gTaoN6g7QbtBvEG9gbxB2wnsTOBsoGygbPBDHpmLDZGMQH3m8u54tnQUAZIgCIIiBgD8cGVyZfT/pQL3Xe/K3pWv8pE4gfe4ZRIj7putaqOXlXxZUskr73726vWz2PmunntpjVP+D9LsxEg0PeoMlITdufI3ofhUI9jb/FoTtAjrXLkklB9rF5+fMdXWSVoQlR8zyndSSWI2fwubgvKXNcrHtifVJteNFpQ/uXInK0Dw/TezKUwKyh+FgDcX1e4/YeIaHBLKH4REnMVrdsICc+9AVT7K0HTCIjE6FyGCxvbvQwntDX4Kl616PgsTPbdCBvMNcStM0DA+QfBumlUuWeNN6L96NxAXmTbPx81mUxPF5smM0sjoBObu+ZCp9wtvByV7iIH5RkPpBBaaZ6LevVhxHx2ZnUjNbKHulJBt6wRC/H9hdQKG8DnWTXViECuZmfCNm6JHGMNnhAPPmJDtB9XmudwHB6RZnIlARfgM5lkEIfWR4l3bxIrj46foBFaGzygfaTtLWzkXW+wECOEzglPheEaEiHLmJQr1NZ1UgvR6HGs6oW1zzNSjh89Im7I9qxE74ad1yI1AYsTsvnxZu55e2KBh+Iz52uLmlhAWnqYTEmid3cM8+0w9nkYZNyzKThvQ2ecHIYK5O34UJmh/utPtUxzEtQAN5fiIfHjRCQs0yj4XlN8LEzTIPheUpybeXoVpQb2sAMFlpg45R2EDsn/G221oe+WjQFr2GSFDgQ8xmyuhJyVsJxVgfpX7yl5aAsLtC/K3ofyrKCV4dficUX4C8x6hIFzH6ubdMaP8ollkxEJn9VwT/5yv/j+58s3lULlxTgmEXXhA/eL1G9Yhls7y7QuIfii2tUincgAAAABJRU5ErkJggg==" alt="">
+             <p class="capitalize">Softwares</p>
+             <p class="capitalize">html </p>
+
+             </div>
+             <div class="border-2  h-44 lg:w-[33%]
+             bg-[#11001F] gap-2 
+              border-white
+                flex flex-col text-white
+                 rounded-2xl p-5">
+                 <img class="w-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAyCAYAAAAN6MhFAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMDSURBVHgB5ZqNldowDMdFJ6ATNJ2gGSEjsEG5CZoN4DZgA9jgukF6E0AnSG4C2ECVL6ZPF/wh5Tvt/z29Bmpb+hFbsXwB+E+0gpGFiBn9k5KtyS6r1eon/EsygGQFPqok28LSRRAbD6ALeEeWwJJk7pINXqtyEcACwALraZySnRYFTMGsbVBlDNDRN5k9MAO8BgJ9cQE6xroDX2cDLAQ8tgnKAu/RPzuGBx4S0OErBtybL+40Bni1QSXQs0YBVgCuYWANAjwnQEds3YHnDOiItR0wffFjCYAuYXyTsrs3zJYI2FQI+N5g7/i/81IAm7JT1gnqu6MlLqiEQn8piLzRAf0q5wyM9ZQ9B+LHZgfJBnsLMxEqSkHfALMGRnkpWARB2YCzApYCsvaFCJR1mLRm1AKyfoUKlHUcFVgAeAz5ag3qGqBvYJSVgu8+BGMVXUF5EOdIQEcJsBCwaHxew1CgNiAuk91aVxSoKObx0XcKA4Jmvl9VAZzatjsJYMM/b7+FAUFz5ujsaSMBRg0gG/uFtTuAEPQT6JWw65urAf09pSLbk32lj09kFcRlxnom+0z9nswYnnZv7PobDCX8mBD2in6+R4WqFLTj/O0LwlhBK/y4RjaglA30YKdnjspSEOv1zfUl0LYdqMNJCiMLHzPvJtC2aLtGE/6B1tEFRhb5NGu5Yl8lkn5aUH4HR4dkemXXooSkBeWDvsF04j9yJunQZer+gulUseskkNBeoY0aSSCDiYT1hkSUFG2Wz0AqR8ad9IQQFVtBI83UTdj1zWa/KcXXafQxpwHNPE6m0m92Hc28GlA+WAXTS3VHxcLHfeoRJ3ivAP31az85A/0vQ+3GAkZ/YRA9VtE4CR2MlUPdYYyfQJijnP733Cg7esy7OLc/ao7hQ7j38k46ZquXHrFeDznZdwhvqs0j6GLNZMmKfX9jfRNrpuTKIL5RP5E9B4rzfoXdj0w0MnfQ1LEJTCmsp3SB/avAFgV6U72/r2sDyshMQWyevdq1WkFdMJipfuprB/YHv62y0lDBHLQAAAAASUVORK5CYII=" alt="">
+                 <p class="capitalize">Softwares</p>
+                 <p class="capitalize">html </p>
+   
+                </div>
+                <div class="border-2  h-44 lg:w-[33%]
+                bg-[#11001F] gap-2
+                 border-white
+                   flex flex-col text-white
+                    rounded-2xl p-5">
+                    <img class="w-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAwCAYAAABe6Vn9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI6SURBVHgB7ZntbcIwEIbfVPxvO0HTCVo2CBOUEegEhQkYod2AFegE0AlIJ8CdADqBe6cEyXEuIZEtsKs8kvmwY+debF98B+ABrXWm3cnggRv44Rnu+BjDm6AXuONjDCTwAC2XA73dwY1jkiT3uDbC/tn36HvwvY98LDl77X+jO59nxuqND0H22l+jO/mZsS6P4H7THn1Tqy8vQae9OBJuwgOm6LbJn6zvR+7bR1TZ53Qvfp9Sf9Wxb06O5Ci2sBAqK2Gjhs5KGz9gUorhig2KmYkRRWVCs6VOgtjVpogbRWU8IjEz1MXwuswRNimqdvPnOc/OzlqTH4gEttWyfePkdq+NLhyZySHhV/Mi2lhezneXwrbf12k7GP6/IJrBB0SCtN+lGZogHrJajeDlNogEPhDYxkuCmDkCh2xcSoY3CWKWCBSy7a3J6DZBzIbKFAGgi4doVtrUSO3B2oIyPqctbS6k6H5PEUmQGXCFTs1WyW2P0S8vcC22KGyt0HiW00VKaYYizPaS1fSAQpEpWpOZW66o2d8kyEZXn8p2dDuB+z5Ky3FPKBgPeY5GIdtVsX+EjpgDCn5kT+0/cEDyTU0i2hhO26HTeclZLFB1l79wh13wq/W9N0PEGjqDoNAZBIXOICh0pDRWLLGQCAtSVt0MkcC5Basq56MPxxdmwztdyDHQF8KGbbSzU3lSxjk7xBN2t/F4U8YcC8TPohI/cbpKC5nICNhrI9VWO1mXjRmVW4QNhyyczKn8tf8HiTbLNoodLQgAAAAASUVORK5CYII=" alt="">
+                    <p class="capitalize">Softwares</p>
+                    <p class="capitalize">html </p>
        
-          </div>
-          <div class="btncon">
-            <button id ="showbtn">show more</button>
-          </div>
-    
-
-
-
-<footer>
-<div class="footer">
-<div class="row">
-<a href="#"><i class="fa fa-facebook"></i></a>
-<a href="#"><i class="fa fa-instagram"></i></a>
-<a href="#"><i class="fa fa-youtube"></i></a>
-<a href="#"><i class="fa fa-twitter"></i></a>
-</div>
-
-<div class="row">
-<ul>
-<li><a href="#">Contact us</a></li>
-<li><a href="#">Our Services</a></li>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Terms & Conditions</a></li>
-<li><a href="#">Career</a></li>
-</ul>
-</div>
-
-<div class="row">
-PIXLO Copyright © 2024 - All rights reserved || Designed By: RITIK PATHANIA 
-</div>
-</div>
-</footer>
-
-    
-  <script src="script.js"></script>
+                    </div>
+                              
+                              
+                  </div>
+                  <!-- tool -->
+                   <div class="flex px-2 gap-2 flex-col w-full">
+                   <p class="capitalize text-xl text-white">tool i use</p>
+                   
+                    <div class="flex  gap-2 ">
+                     <div class="p-2 border-2 bg-slate-400 
+                     rounded-xl">
+                     <img   class="w-7" src="https://elianajade.com/assets/vscode-xCMPv9CZ.png" alt="">
+                    </div>  
+                    <div class="p-2 border-2 bg-slate-400 
+                     rounded-xl">
+                     <img   class="w-7" src="https://elianajade.com/assets/vscode-xCMPv9CZ.png" alt="">
+                    </div>  
+                    <div class="p-2 border-2 bg-slate-400 
+                     rounded-xl">
+                     <img   class="w-7" src="https://elianajade.com/assets/vscode-xCMPv9CZ.png" alt="">
+                    </div>  
+                    <div class="p-2 border-2 bg-slate-400 
+                     rounded-xl">
+                     <img   class="w-7" src="https://elianajade.com/assets/vscode-xCMPv9CZ.png" alt="">
+                    </div>  
+                    <div class="p-2 border-2 bg-slate-400 
+                     rounded-xl">
+                     <img   class="w-7" src="https://elianajade.com/assets/vscode-xCMPv9CZ.png" alt="">
+                    </div>  
+                    </div>
+                </div>
+                </div>
+            </div>
+      </div>
+      </div>
+       <script src="script.js"></script>
 </body>
 </html>
